@@ -4,7 +4,6 @@ pipeline {
         choice(
             choices: ['plan', 'apply', 'destroy'],
             description: 'Terraform action to apply',
-    
             name: 'action')
         choice(
             choices: ['dev', 'prod'],
