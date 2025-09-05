@@ -1,0 +1,17 @@
+vpc_name = "eks-lic-prod-vpc"
+vpc_cidr = "192.168.0.0/16"
+public_subnet_cidrs = ["192.168.0.0/20", "192.168.16.0/20","192.168.32.0/20"]
+private_subnet_cidrs = ["192.168.48.0/20", "192.168.64.0/20","192.168.80.0/20"]
+environment = "prod"
+eks_version = "1.33"
+node_group_disk_size = 30
+node_group_instance_type = "t3.small"
+node_group_desired_size = 2
+node_group_max_size = 4
+node_group_min_size = 2
+tags = {
+    Owner       = "Rushi Technologies"
+    Environment = "Prod"
+    Project     = "EKS-LIC"
+    CostCenter  = "IT"
+}    
